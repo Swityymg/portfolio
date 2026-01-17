@@ -25,12 +25,17 @@
     </header>
 
     <section id="hero">
-        <div class="container hero-content">
-            <h1>Hi, i'm <span>Swietenia Medina</span></h1>
-            <p>Engineering Student | Web Development | Investment Project Evaluator</p>
-            <div class="hero-buttons">
-                <a href="#portfolio" class="btn btn-outline">View My Work</a>
-                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        <div class="container hero-container-flex">
+            <div class="hero-content">
+                <h1>Hi, i'm <span>Swietenia Medina</span></h1>
+                <p>Engineering Student | Web Development | Investment Project Evaluator</p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-outline">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="img/swietenia.png" alt="Swietenia Medina Profile">
             </div>
         </div>
     </section>
@@ -73,132 +78,124 @@
     </section>
 
     <section id="portfolio">
-    <div class="container">
-        <div class="section-title">
-            <h2>Projects & Milestones</h2>
-            <p>A journey through international awards, innovative development, and technical leadership.</p>
-        </div>
+        <div class="container">
+            <div class="section-title">
+                <h2>Projects & Milestones</h2>
+                <p>A journey through international awards, innovative development, and technical leadership.</p>
+            </div>
 
-        <div class="project-card">
-            <div class="project-content">
-                <p class="tag"><i class="fas fa-trophy"></i> 2nd Place Worldwide - Altair Global Contest</p>
-                <h3>Air Quality Monitoring AI</h3>
-                <p>Awarded by <strong>Altair (Siemens)</strong> for transforming raw environmental data into predictive insights using Machine Learning.</p>
-                <ul class="experience-details" style="list-style: none; padding: 10px 0;">
-                    <li>🔹 <strong>ML Model:</strong> Decision Tree implementation for air quality prediction.</li>
-                    <li>🔹 <strong>Data:</strong> 10 dynamic visualizations to uncover pollutant patterns.</li>
-                    <li>🔹 <strong>Impact:</strong> Narrative-driven analysis focused on public health.</li>
-                </ul>
-                <div class="project-tags">
-                    <span class="skill-tag">Machine Learning</span>
-                    <span class="skill-tag">Data Science</span>
-                    <span class="skill-tag">RapidMiner</span>
+            <div class="project-card">
+                <div class="project-content">
+                    <p class="tag"><i class="fas fa-trophy"></i> 2nd Place Worldwide - Altair Global Contest</p>
+                    <h3>Air Quality Monitoring AI</h3>
+                    <p>Awarded by <strong>Altair (Siemens)</strong> for transforming raw environmental data into predictive insights using Machine Learning.</p>
+                    <ul class="experience-details" style="list-style: none; padding: 10px 0;">
+                        <li>🔹 <strong>ML Model:</strong> Decision Tree implementation for air quality prediction.</li>
+                        <li>🔹 <strong>Data:</strong> 10 dynamic visualizations to uncover pollutant patterns.</li>
+                        <li>🔹 <strong>Impact:</strong> Narrative-driven analysis focused on public health.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Data Science</span>
+                        <span class="skill-tag">RapidMiner</span>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="img/altair-project.jpeg" alt="Altair Global Student Contest">
                 </div>
             </div>
-            <div class="project-image">
-                <img src="img/altair-project.jpeg" alt="Altair Global Student Contest">
-            </div>
-        </div>
 
-        <div class="project-card reverse-layout">
-            <div class="project-content">
-                <p class="tag"><i class="fas fa-medal"></i> 1st Place - Oracle Academy Hackathon</p>
-                <h3>aMar: Education Tech Beach Platform</h3>
-                <p>Winner of a 4-week innovation challenge. developed an app to bridge the gap between Cancun's youth and marine ecosystems.</p>
-                <ul class="experience-details" style="list-style: none; padding: 10px 0;">
-                    <li>🔹 <strong>Tech:</strong> Built with Oracle APEX and Oracle Digital Assistant (AI Chatbot).</li>
-                    <li>🔹 <strong>Innovation:</strong> Educational platform for flora, fauna, and endangered species.</li>
-                </ul>
-                <div class="project-tags">
-                    <span class="skill-tag">Oracle APEX</span>
-                    <span class="skill-tag">Innovation</span>
-                    <span class="skill-tag">Chatbot</span>
+            <div class="project-card reverse-layout">
+                <div class="project-content">
+                    <p class="tag"><i class="fas fa-medal"></i> 1st Place - Oracle Academy Hackathon</p>
+                    <h3>aMar: Education Tech Beach Platform</h3>
+                    <p>Winner of a 4-week innovation challenge. Developed an app to bridge the gap between Cancun's youth and marine ecosystems.</p>
+                    <ul class="experience-details" style="list-style: none; padding: 10px 0;">
+                        <li>🔹 <strong>Tech:</strong> Built with Oracle APEX and Oracle Digital Assistant (AI Chatbot).</li>
+                        <li>🔹 <strong>Innovation:</strong> Educational platform for flora, fauna, and endangered species.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="skill-tag">Oracle APEX</span>
+                        <span class="skill-tag">Innovation</span>
+                        <span class="skill-tag">Chatbot</span>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="img/amar-oracle.jpeg" alt="Oracle Academy Hackathon">
                 </div>
             </div>
-            <div class="project-image">
-                <img src="img/amar-oracle.jpeg" alt="Oracle Academy Hackathon">
-            </div>
-        </div>
 
-        <div class="project-card">
-            <div class="project-content">
-                <p class="tag"><i class="fas fa-code"></i> Fullstack Web App</p>
-                <h3>Serviralia</h3>
-                <p>A secure platform connecting residents with maintenance professionals, solving the reliability gap in home services.</p>
-                <ul class="experience-details" style="list-style: none; padding: 10px 0;">
-                    <li>🔹 <strong>Architecture:</strong> MySQL, Express, React, and Node.js.</li>
-                    <li>🔹 <strong>Business:</strong> Integrated a full investment plan and financial valuation.</li>
-                    <li>🔹 <strong>Quality:</strong> Built-in review and rating system for trust.</li>
-                </ul>
-                <div class="project-tags">
-                    <span class="skill-tag">React</span>
-                    <span class="skill-tag">NodeJS</span>
-                    <span class="skill-tag">MySQL</span>
+            <div class="project-card">
+                <div class="project-content">
+                    <p class="tag"><i class="fas fa-code"></i> Fullstack Web App</p>
+                    <h3>Serviralia</h3>
+                    <p>A secure platform connecting residents with maintenance professionals, solving the reliability gap in home services.</p>
+                    <ul class="experience-details" style="list-style: none; padding: 10px 0;">
+                        <li>🔹 <strong>Architecture:</strong> MySQL, Express, React, and Node.js.</li>
+                        <li>🔹 <strong>Business:</strong> Integrated a full investment plan and financial valuation.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">NodeJS</span>
+                        <span class="skill-tag">MySQL</span>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="img/serviralia.png" alt="Serviralia Platform">
                 </div>
             </div>
-            <div class="project-image">
-                <img src="img/serviralia.png" alt="Serviralia Platform">
-            </div>
-        </div>
 
-        <div class="project-card reverse-layout">
-            <div class="project-content">
-                <p class="tag"><i class="fas fa-star"></i> Semifinalist - Micron Hackathon</p>
-                <h3>Talent Land 2025</h3>
-                <p>Participated in Mexico's largest tech event, collaborating in high-pressure problem solving.</p>
-                <ul class="experience-details" style="list-style: none; padding: 10px 0;">
-                    <li>🔹 <strong>System:</strong> Python-based optimizer for Wafer production using Linear Programming.</li>
-                    <li>🔹 <strong>Analysis:</strong> Market demand projections using Excel and Power BI.</li>
-                    <li>🔹 <strong>Soft Skills:</strong> Semifinalist position in a competitive teamwork environment.</li>
-                </ul>
-                <div class="project-tags">
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">Linear Programming</span>
-                    <span class="skill-tag">PowerBI</span>
+            <div class="project-card reverse-layout">
+                <div class="project-content">
+                    <p class="tag"><i class="fas fa-star"></i> Semifinalist - Micron Hackathon</p>
+                    <h3>Talent Land 2025</h3>
+                    <p>Participated in Mexico's largest tech event, collaborating in high-pressure problem solving.</p>
+                    <ul class="experience-details" style="list-style: none; padding: 10px 0;">
+                        <li>🔹 <strong>System:</strong> Python-based optimizer for Wafer production using Linear Programming.</li>
+                        <li>🔹 <strong>Analysis:</strong> Market demand projections using Excel and Power BI.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Linear Programming</span>
+                        <span class="skill-tag">PowerBI</span>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="img/micron.jpeg" alt="Talent Land Micron Hackathon">
                 </div>
             </div>
-            <div class="project-image">
-                <img src="img/micron.jpeg" alt="Talent Land Micron Hackathon">
-            </div>
-        </div>
 
-        <div class="project-card">
-            <div class="project-content">
-                <p class="tag"><i class="fas fa-robot"></i> AI Storytelling</p>
-                <h3>Érase una vez</h3>
-                <p>An AI-powered app that generates personalized children's stories and illustrations from a simple phrase.</p>
-                <ul class="experience-details" style="list-style: none; padding: 10px 0;">
-                    <li>🔹 <strong>Tech:</strong> Uses Generative AI to foster early reading habits.</li>
-                    <li>🔹 <strong>Impact:</strong> Combines EdTech with interactive storytelling.</li>
-                </ul>
-                <div class="project-tags">
-                    <span class="skill-tag">GenAI</span>
-                    <span class="skill-tag">Mobile App</span>
-                    <span class="skill-tag">Education Tech</span>
+            <div class="project-card">
+                <div class="project-content">
+                    <p class="tag"><i class="fas fa-robot"></i> AI Storytelling</p>
+                    <h3>Érase una vez</h3>
+                    <p>An AI-powered app that generates personalized children's stories and illustrations from a simple phrase.</p>
+                    <div class="project-tags">
+                        <span class="skill-tag">GenAI</span>
+                        <span class="skill-tag">Mobile App</span>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="img/eraseunavez.png" alt="Érase una vez App">
                 </div>
             </div>
-            <div class="project-image">
-                <img src="img/eraseunavez.png" alt="Érase una vez App">
-            </div>
-        </div>
 
-        <div class="project-card reverse-layout">
-            <div class="project-content">
-                <p class="tag"><i class="fas fa-cloud"></i> Tech Conference</p>
-                <h3>Google Cloud Summit 2025</h3>
-                <p>International networking and training on Cloud Computing and AI trends.</p>
-                <div class="project-tags">
-                    <span class="skill-tag">GoogleCloud</span>
-                    <span class="skill-tag">Cybersecurity</span>
+            <div class="project-card reverse-layout">
+                <div class="project-content">
+                    <p class="tag"><i class="fas fa-cloud"></i> Tech Conference</p>
+                    <h3>Google Cloud Summit 2025</h3>
+                    <p>International networking and training on Cloud Computing and AI trends.</p>
+                    <div class="project-tags">
+                        <span class="skill-tag">GoogleCloud</span>
+                        <span class="skill-tag">Cybersecurity</span>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="img/google.jpeg" alt="Google Cloud Summit">
                 </div>
             </div>
-            <div class="project-image">
-                <img src="img/google.jpeg" alt="Google Cloud Summit">
-            </div>
         </div>
-
-    </div>
-</section>
+    </section>
 
     <section id="contact">
         <div class="container">
@@ -235,17 +232,12 @@
     </footer>
 
     <script>
-        // Sticky Header
         window.addEventListener('scroll', () => {
             document.querySelector('header').classList.toggle('sticky', window.scrollY > 0);
         });
-
-        // Mobile Menu
         const menuToggle = document.querySelector('.menu-toggle');
         const nav = document.querySelector('nav');
-        menuToggle.addEventListener('click', () => {
-            nav.classList.toggle('active');
-        });
+        menuToggle.addEventListener('click', () => { nav.classList.toggle('active'); });
     </script>
 </body>
 </html>
