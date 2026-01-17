@@ -21,7 +21,7 @@ nav ul { display: flex; list-style: none; gap: 2rem; }
 nav a { text-decoration: none; color: var(--text-main); font-weight: 500; transition: 0.3s; font-size: 0.9rem; }
 nav a:hover { color: var(--accent); }
 
-/* Hero con Imagen de Fondo */
+/* Hero Section con Imagen Personal */
 #hero {
     height: 100vh;
     display: flex;
@@ -31,9 +31,30 @@ nav a:hover { color: var(--accent); }
                 url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop') no-repeat center center/cover;
     background-attachment: fixed;
 }
-h1 { font-size: 4rem; margin-bottom: 1rem; font-weight: 800; }
+
+.hero-container-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.hero-content { flex: 1.2; }
+h1 { font-size: 3.5rem; margin-bottom: 1rem; font-weight: 800; line-height: 1.2; }
 h1 span { color: var(--accent); text-shadow: 0 0 15px var(--accent-glow); }
-.hero-content p { font-size: 1.25rem; color: var(--text-muted); margin-bottom: 2.5rem; max-width: 700px; }
+.hero-content p { font-size: 1.2rem; color: var(--text-muted); margin-bottom: 2.5rem; }
+
+.hero-image { flex: 0.8; display: flex; justify-content: center; }
+.hero-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 30px;
+    border: 2px solid var(--accent);
+    box-shadow: 0 0 30px var(--accent-glow);
+    transition: 0.4s;
+}
+.hero-image img:hover { transform: scale(1.05); }
 
 /* Buttons */
 .btn { padding: 0.8rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; transition: 0.3s; }
@@ -57,7 +78,7 @@ h1 span { color: var(--accent); text-shadow: 0 0 15px var(--accent-glow); }
 .section-title h2 { font-size: 2.5rem; margin-bottom: 1rem; }
 .project-card { display: grid; grid-template-columns: 1.2fr 1fr; background: var(--bg-card); border-radius: 24px; overflow: hidden; margin-bottom: 4rem; border: 1px solid rgba(255,255,255,0.05); transition: 0.4s; }
 .project-card:hover { transform: translateY(-10px); border-color: var(--accent); }
-.project-content { padding: 3.5rem; }
+.project-content { padding: 3rem; }
 .project-image img { width: 100%; height: 100%; object-fit: cover; }
 .reverse-layout { direction: rtl; }
 .reverse-layout .project-content { direction: ltr; }
@@ -83,8 +104,10 @@ footer { text-align: center; padding: 5rem 0; color: var(--text-muted); font-siz
 
 /* Responsive */
 @media (max-width: 768px) {
+    .hero-container-flex { flex-direction: column-reverse; text-align: center; padding-top: 120px; gap: 2rem; }
+    h1 { font-size: 2.5rem; }
+    .hero-image img { width: 220px; height: 220px; }
     .project-card, .contact-grid { grid-template-columns: 1fr; }
-    h1 { font-size: 2.8rem; }
     .project-content { padding: 2rem; }
     .reverse-layout { direction: ltr; }
 }
