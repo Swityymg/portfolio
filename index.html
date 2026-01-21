@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swietenia Medina | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <title>Swietenia Medina | Portfolio ✨</title>
+
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💖</text></svg>">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <div class="container header-container">
@@ -27,11 +36,13 @@
     <section id="hero">
         <div class="container hero-container-flex">
             <div class="hero-content">
-                <h1>Hi, i'm <span>Swietenia Medina</span></h1>
-                <p>Engineering Student | Web Development | Investment Project Evaluator</p>
+                <h1>Hi, i'm <span>Swietenia Medina</span> ✨</h1>
+                <p>Engineering Student | Data Science | Big Data | Web Development | Investment Project Evaluator | Project Management</p>
                 <div class="hero-buttons">
                     <a href="#portfolio" class="btn btn-outline">View My Work</a>
-                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                    <button onclick="magicSurprise()" class="btn btn-primary btn-sparkle">
+                        <i class="fas fa-wand-magic-sparkles"></i> ✨ Fun facts
+                    </button>
                 </div>
             </div>
             <div class="hero-image">
@@ -44,7 +55,7 @@
         <div class="container">
             <div class="section-title">
                 <h2>Professional Experience</h2>
-                <p>Combining technical engineering with strategic business growth.</p>
+                <p>Merging tech precision with strategic growth.</p>
             </div>
             <div class="timeline">
                 <div class="timeline-item">
@@ -52,11 +63,10 @@
                     <div class="timeline-date">2026 - Present</div>
                     <div class="timeline-content">
                         <h3>Software Engineer</h3>
-                        <p class="company">Hotel Los Cocos</p>
+                        <p class="company">Hotel Los Cocos 🌴</p>
                         <div class="experience-details">
-                            <p>🔹 Contributed to the development of a website for Hotel Los Cocos, enhancing user experience and reservation management.</p>
-                            <p>🔹 Analyzed and improved hotel systems processes to increase efficiency and reduce costs.</p>
-                            <p>🔹 Collaborated on implementing tech solutions to enhance guest experience.</p>
+                            <p>🔹 Enhancing user experience and reservation management systems.</p>
+                            <p>🔹 Optimizing hotel processes for maximum efficiency.</p>
                         </div>
                     </div>
                 </div>
@@ -65,11 +75,10 @@
                     <div class="timeline-date">2025 - Present</div>
                     <div class="timeline-content">
                         <h3>Engineering Promoter</h3>
-                        <p class="company">Anáhuac Cancún University | Cancún, México</p>
+                        <p class="company">Anáhuac Cancún University</p>
                         <div class="experience-details">
-                            <p>🔹 Provided personalized guidance to <strong>70+ students and parents</strong> regarding AI and Cybersecurity Engineering programs.</p>
-                            <p>🔹 Increased lead generation through targeted communication and tech-driven outreach strategies.</p>
-                            <p>🔹 Created strategic video content for the School of Engineering’s TikTok and Instagram accounts to boost engagement.</p>
+                            <p>🔹 Guidance for 70+ students in AI and Cybersecurity programs.</p>
+                            <p>🔹 Strategic tech-driven content creation for social media.</p>
                         </div>
                     </div>
                 </div>
@@ -81,7 +90,7 @@
         <div class="container">
             <div class="section-title">
                 <h2>Projects & Milestones</h2>
-                <p>A journey through international awards, innovative development, and technical leadership.</p>
+                <p>A journey through international awards and innovative development.</p>
             </div>
 
             <div class="project-card">
@@ -89,15 +98,13 @@
                     <p class="tag"><i class="fas fa-trophy"></i> 2nd Place Worldwide - Altair Global Contest</p>
                     <h3>Air Quality Monitoring AI</h3>
                     <p>Awarded by <strong>Altair (Siemens)</strong> for transforming raw environmental data into predictive insights using Machine Learning.</p>
-                    <ul class="experience-details" style="list-style: none; padding: 10px 0;">
+                    <ul class="experience-details">
                         <li>🔹 <strong>ML Model:</strong> Decision Tree implementation for air quality prediction.</li>
-                        <li>🔹 <strong>Data:</strong> 10 dynamic visualizations to uncover pollutant patterns.</li>
-                        <li>🔹 <strong>Impact:</strong> Narrative-driven analysis focused on public health.</li>
+                        <li>🔹 <strong>Data visualizations:</strong> 10 dynamic visualizations to uncover pollutant patterns.</li>
                     </ul>
                     <div class="project-tags">
                         <span class="skill-tag">Machine Learning</span>
                         <span class="skill-tag">Data Science</span>
-                        <span class="skill-tag">RapidMiner</span>
                     </div>
                 </div>
                 <div class="project-image">
@@ -110,13 +117,12 @@
                     <p class="tag"><i class="fas fa-medal"></i> 1st Place - Oracle Academy Hackathon</p>
                     <h3>aMar: Education Tech Beach Platform</h3>
                     <p>Winner of a 4-week innovation challenge. Developed an app to bridge the gap between Cancun's youth and marine ecosystems.</p>
-                    <ul class="experience-details" style="list-style: none; padding: 10px 0;">
+                    <ul class="experience-details">
                         <li>🔹 <strong>Tech:</strong> Built with Oracle APEX and Oracle Digital Assistant (AI Chatbot).</li>
                         <li>🔹 <strong>Innovation:</strong> Educational platform for flora, fauna, and endangered species.</li>
                     </ul>
                     <div class="project-tags">
                         <span class="skill-tag">Oracle APEX</span>
-                        <span class="skill-tag">Innovation</span>
                         <span class="skill-tag">Chatbot</span>
                     </div>
                 </div>
@@ -130,13 +136,13 @@
                     <p class="tag"><i class="fas fa-code"></i> Fullstack Web App</p>
                     <h3>Serviralia</h3>
                     <p>A secure platform connecting residents with maintenance professionals, solving the reliability gap in home services.</p>
-                    <ul class="experience-details" style="list-style: none; padding: 10px 0;">
+                    <ul class="experience-details">
                         <li>🔹 <strong>Architecture:</strong> MySQL, Express, React, and Node.js.</li>
                         <li>🔹 <strong>Business:</strong> Integrated a full investment plan and financial valuation.</li>
                     </ul>
                     <div class="project-tags">
                         <span class="skill-tag">React</span>
-                        <span class="skill-tag">NodeJS</span>
+                        <span class="skill-tag">Node JS</span>
                         <span class="skill-tag">MySQL</span>
                     </div>
                 </div>
@@ -149,15 +155,15 @@
                 <div class="project-content">
                     <p class="tag"><i class="fas fa-star"></i> Semifinalist - Micron Hackathon</p>
                     <h3>Talent Land 2025</h3>
-                    <p>Participated in Mexico's largest tech event, collaborating in high-pressure problem solving.</p>
-                    <ul class="experience-details" style="list-style: none; padding: 10px 0;">
+                    <p>Participated in Mexico's largest tech event winning 4th place, collaborating in high-pressure problem solving.</p>
+                    <ul class="experience-details">
                         <li>🔹 <strong>System:</strong> Python-based optimizer for Wafer production using Linear Programming.</li>
                         <li>🔹 <strong>Analysis:</strong> Market demand projections using Excel and Power BI.</li>
                     </ul>
                     <div class="project-tags">
                         <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Linear Programming</span>
                         <span class="skill-tag">PowerBI</span>
+                        <span class="skill-tag">Teamwork</span>
                     </div>
                 </div>
                 <div class="project-image">
@@ -170,9 +176,13 @@
                     <p class="tag"><i class="fas fa-robot"></i> AI Storytelling</p>
                     <h3>Érase una vez</h3>
                     <p>An AI-powered app that generates personalized children's stories and illustrations from a simple phrase.</p>
+                    <ul class="experience-details">
+                        <li>🔹 <strong>Generative AI:</strong> LLM-powered engine that creates unique children's stories and custom illustrations from a single prompt.</li>
+                        <li>🔹 <strong>EdTech Focus:</strong> Interactive UI designed to stimulate cognitive development and foster early reading habits in the digital generation.</li>
+                    </ul>
                     <div class="project-tags">
                         <span class="skill-tag">GenAI</span>
-                        <span class="skill-tag">Mobile App</span>
+                        <span class="skill-tag">EdTech</span>
                     </div>
                 </div>
                 <div class="project-image">
@@ -185,8 +195,12 @@
                     <p class="tag"><i class="fas fa-cloud"></i> Tech Conference</p>
                     <h3>Google Cloud Summit 2025</h3>
                     <p>International networking and training on Cloud Computing and AI trends.</p>
+                    <ul class="experience-details">
+                        <li>🔹 <strong>Technical Training:</strong> Deep dive into Generative AI, Vertex AI, and Cloud Security architectures at Google’s flagship event in Mexico City.</li>
+                        <li>🔹 <strong>Strategic Networking:</strong> Collaboration with international experts on cloud-native solutions and big data optimization for enterprise.</li>
+                    </ul>
                     <div class="project-tags">
-                        <span class="skill-tag">GoogleCloud</span>
+                        <span class="skill-tag">Google Cloud</span>
                         <span class="skill-tag">Cybersecurity</span>
                     </div>
                 </div>
@@ -200,20 +214,15 @@
     <section id="contact">
         <div class="container">
             <div class="contact-card">
-                <div class="contact-header">
-                    <h2>Let's Work Together</h2>
-                    <p>I'm currently open to internships and collaborative tech projects.</p>
-                </div>
+                <h2>Let's Work Together 💖</h2>
                 <div class="contact-grid">
-                    <div class="contact-method">
+                    <div class="contact-method" onclick="contactAlert()">
                         <i class="fas fa-envelope"></i>
                         <p>swietenia.medina@gmail.com</p>
-                        <a href="mailto:swietenia.medina@gmail.com" class="contact-link">Send a message</a>
                     </div>
                     <div class="contact-method">
                         <i class="fas fa-map-marker-alt"></i>
                         <p>Cancún, México</p>
-                        <span class="sub-text">Remote / On-site</span>
                     </div>
                 </div>
                 <div class="social-pills">
@@ -226,18 +235,72 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Swietenia Medina. All rights reserved.</p>
-            <p>Designed and developed by Swietenia Medina</p>
+            <p>&copy; 2026 Swietenia Medina. Made with love and Code.</p>
         </div>
     </footer>
 
     <script>
         window.addEventListener('scroll', () => {
-            document.querySelector('header').classList.toggle('sticky', window.scrollY > 0);
+            const header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
         });
+
         const menuToggle = document.querySelector('.menu-toggle');
         const nav = document.querySelector('nav');
-        menuToggle.addEventListener('click', () => { nav.classList.toggle('active'); });
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+
+        function magicSurprise() {
+            const facts = [
+                { title: 'Global Achievement 🏆', text: 'I won 2nd place worldwide in the Altair Global Student Contest for Machine Learning and Data Science', type: 'gold' },
+                { title: 'Hackathon Winner 🥇', text: '1st place winner in the Oracle Academy Hackathon with an EdTech solution.', type: 'gold' },
+                { title: 'Innovation ✨', text: 'I am the creator of Serviralia, a platform designed to simplify home maintenance services.', type: 'pink' },
+                { title: 'Talent Land 2025 ⭐', text: 'Winner of 4th place in the Micron Hackathon, optimizing wafer production using Python.', type: 'gold' },
+                { title: 'My top tech films? 🍿', text: '"Her", "Minority Report", and "The Social Network"', type: 'pink' },
+                { title: 'Favorite Animal 🦛', text: 'I absolutely love hippos! They are much more fascinating than people think.', type: 'pink' },
+                { title: 'Music Collection 🎶', text: 'I have a special collection of physical albums from my favorite band.', type: 'pink' },
+                { title: 'Mindset 🧠', text: 'I truly believe that teamwork is the most important skill in technology and business.', type: 'gold' },
+                { title: 'Specialization 🚀', text: 'Currently diving deep into Big Data & Data Science to master predictive analytics.', type: 'gold' },
+                ];
+
+            const randomFact = facts[Math.floor(Math.random() * facts.length)];
+
+            // Lógica de colores de confeti
+            let confettiColors = [];
+            if (randomFact.type === 'gold') {
+                confettiColors = ['#FFD700', '#FFA500', '#FFF8DC']; // Dorado y Naranja
+            } else {
+                confettiColors = ['#ffb7c5', '#ff9aa2', '#ffffff']; // Rosa y Blanco
+            }
+
+            // Lanzar confeti 
+            confetti({
+                particleCount: 150,
+                spread: 70,
+                origin: { y: 0.6 },
+                colors: confettiColors
+            });
+
+            Swal.fire({
+                title: randomFact.title,
+                text: randomFact.text,
+                icon: randomFact.type === 'gold' ? 'success' : 'info',
+                confirmButtonColor: '#ffb7c5',
+                confirmButtonText: 'Close ✨',
+                backdrop: `rgba(255, 183, 197, 0.2)`
+            });
+        }
+
+        function contactAlert() {
+            Swal.fire({
+                title: 'Contact Info',
+                text: 'Email: swietenia.medina@gmail.com',
+                icon: 'success',
+                confirmButtonColor: '#ffb7c5'
+            });
+        }
     </script>
 </body>
+
 </html>
